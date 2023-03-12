@@ -1,0 +1,214 @@
+type: object
+required:
+  - titulo
+  - tipo
+  - descripcion
+  - propiedades
+  - "$esquema"
+  - requeridos
+properties:
+  titulo:
+    type: string
+  tipo:
+    type: string
+  descripcion:
+    type: string
+  "$esquema":
+    type: string
+  requeridos:
+    type: array
+    items:
+      type: string
+  propiedades:
+    type: object
+    required:
+      - color_de_ojos
+      - peliculas
+      - genero
+      - año_de_nacimiento
+      - color_de_pelo
+      - altura
+      - mundo_natal
+      - masa
+      - nombre
+      - color_de_piel
+      - creado
+      - editado
+      - especies
+      - naves_espaciales
+      - enlace
+      - vehiculos
+    properties:
+      color_de_ojos:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      peliculas:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      genero:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      año_de_nacimiento:
+        type: object
+        required:
+          - tipo
+          - descripcion
+          - formato
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+          format:
+            type: string
+      color_de_pelo:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      altura:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      mundo_natal:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      masa:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      nombre:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      color_de_piel:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      creado:
+        type: object
+        required:
+          - tipo
+          - descripcion
+          - formato
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+          formato:
+            type: string
+      editado:
+        type: object
+        required:
+          - tipo
+          - descripcion
+          - formato
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+          formato:
+            type: string
+      especies:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      naves_espaciales:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+      enlace:
+        type: object
+        required:
+          - tipo
+          - descripcion
+          - formato
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+          formato:
+            type: string
+      vehiculos:
+        type: object
+        required:
+          - tipo
+          - descripcion
+        properties:
+          tipo:
+            type: string
+          descripcion:
+            type: string
+

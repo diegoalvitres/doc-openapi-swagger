@@ -9,7 +9,7 @@ info:
     name: Diego Alvitres
     email: diegoalvitres@gmail.com
 servers:
-  - url: https://dq8mdya51d.execute-api.us-east-1.amazonaws.com/dev/
+  - url: https://dq8mdya51d.execute-api.us-east-1.amazonaws.com/dev
     description: enpoint activo
 tags:
   - name: star wars
@@ -20,9 +20,12 @@ paths:
     $ref: "./resources/getAllPeople.yaml"
   "/people/{id}":
     $ref: "./resources/getPeopleById.yaml"
+  /people/schema:
+    $ref: "./resources/getPeopleSchema.yaml"
   /planet:
     $ref: "./resources/planetGeneral.yaml"
   "/planet/{id}":
     $ref: "./resources/getPlanetById.yaml"
   /search/planet:
     $ref: "./resources/getPlanetByName.yaml"
+

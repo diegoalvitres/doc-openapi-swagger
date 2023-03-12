@@ -1,0 +1,13 @@
+get:
+  summary: Obtener esquema del cuerpo del api de personas
+  operationId: getPeopleSchema
+  description: Obtener esquema del cuerpo del api de personas
+  tags:
+    - star wars
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getPeopleSchemaResponse.yaml"

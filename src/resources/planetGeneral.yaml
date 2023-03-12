@@ -11,7 +11,7 @@ get:
         application/json:
           schema:
             $ref: "../schemas/getAllPlanetsResponse.yaml"
-post:
+post:  
   summary: Agregar nuevo planeta
   operationId: addPlanet
   description: Agregar nuevo planeta a la BD si es que el nombre no esta registrado
@@ -19,6 +19,14 @@ post:
     - star wars
   requestBody:
     $ref: "../schemas/addPlanetRequest.yaml"
+
+  parameters:
+    - name: x-api-key
+      in: header
+      required: true
+      description: API key for authentication
+      schema:
+        type: string
   responses:
     '200':
       description: Respuesta satisfactoria
@@ -38,5 +46,16 @@ post:
             properties:
               statusCode:
                 type: number
+              message:
+                type: string
+    '403':
+      description: Cuando no se envia el apikey correcto
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - message
+            properties:
               message:
                 type: string
