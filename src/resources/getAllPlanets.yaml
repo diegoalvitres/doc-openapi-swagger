@@ -1,0 +1,29 @@
+get:
+  summary: Obtener lista de planetas
+  operationId: getAllPlanets
+  description: Obtener lista de planetas
+  tags:
+    - star wars
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getAllPlanetsResponse.yaml"
+    '404':
+      desctiption: No se encontraron planetas (sin registros en la BD)
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - statusCode
+              - message
+            properties:
+              statusCode:
+                type: number
+              message:
+                type: array
+                items:
+                  type: string

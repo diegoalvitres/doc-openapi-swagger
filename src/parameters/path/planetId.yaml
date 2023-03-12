@@ -1,0 +1,6 @@
+name: planetId
+in: path
+required: true
+description: Identificador del planeta a obtener los datos
+schema:
+  type: string

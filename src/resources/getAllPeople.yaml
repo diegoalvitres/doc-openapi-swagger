@@ -1,0 +1,15 @@
+get:
+  summary: Obtener lista de personas
+  operationId: getAllPeople
+  description: Obtener lista de grupo de personas
+  tags:
+    - star wars
+  parameters:
+    - $ref: "../parameters/query/pageNumber.yaml"
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getAllPeopleResponse.yaml"

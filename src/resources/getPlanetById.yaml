@@ -1,0 +1,29 @@
+get:
+  summary: Obtener planeta por id
+  operationId: getPlanetById
+  description: Obtener info del planeta por su id
+  tags:
+    - star wars
+  parameters:
+    - $ref: "../parameters/path/id.yaml"
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getPlanetResponse.yaml"
+    '404':
+      description: Planeta no encontrado en BD
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - statusCode
+              - message
+            properties:
+              statusCode:
+                type: number
+              message:
+                type: string

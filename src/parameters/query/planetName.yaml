@@ -1,0 +1,6 @@
+name: nombre
+in: query
+description: Nombre del planeta
+required: true
+schema:
+  type: string

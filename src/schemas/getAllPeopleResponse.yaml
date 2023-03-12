@@ -1,0 +1,73 @@
+type: object
+required:
+  - cantidad
+  - siguiente
+  - resultados
+properties:
+  cantidad:
+    type: number
+  siguiente:
+    type: string
+  resultados:
+    type: array
+    items:
+      type: object
+      required:
+        - color_de_ojos
+        - peliculas
+        - genero
+        - año_de_nacimiento
+        - color_de_pelo
+        - altura
+        - mundo_natal
+        - masa
+        - nombre
+        - color_de_piel
+        - creado
+        - editado
+        - especies
+        - naves_espaciales
+        - enlace
+        - vehiculos
+      properties:
+        color_de_ojos:
+          type: string
+        peliculas:
+          type: array
+          items:
+            type: string
+        genero:
+          type: string
+        año_de_nacimiento:
+          type: string
+        color_de_pelo:
+          type: string
+        altura:
+          type: string
+        mundo_natal:
+          type: string
+        masa:
+          type: string
+        nombre:
+          type: string
+        color_de_piel:
+          type: string
+        creado:
+          type: string
+        editado:
+          type: string
+        especies:
+          type: array
+          items:
+            type: string
+        naves_espaciales:
+          type: array
+          items:
+            type: string
+        enlace:
+          type: string
+        vehiculos:
+          type: array
+          items:
+            type: string
+

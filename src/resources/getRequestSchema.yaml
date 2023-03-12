@@ -1,0 +1,13 @@
+get:
+  summary: Obtener el esquema de peticion
+  operationId: getPeopleSchemaRequest
+  description: Obtener el esquema de peticion donde se especifican las propiedades y sus tipos
+  tags:
+    - star wars
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getPeopleSchemaRequestRes.yaml"

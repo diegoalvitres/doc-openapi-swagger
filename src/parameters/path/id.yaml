@@ -1,0 +1,6 @@
+name: id
+in: path
+required: true
+description: Identificador de la persona o planeta a obtener datos
+schema:
+  type: string

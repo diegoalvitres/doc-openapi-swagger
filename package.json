@@ -1,0 +1,20 @@
+{
+  "name": "doc-star-wars-api",
+  "version": "1.0.0",
+  "description": "Documentacion Star Wars API",
+  "main": "index.js",
+  "scripts": {
+    "build": "swagger-cli bundle src/openapi.yaml --outfile _build/openapi.yaml --type yaml",
+    "test": "npm run build && spectral lint _build/openapi.yaml",
+    "preview": "npm run build && redoc-cli serve _build/openapi.yaml --options.onlyRequiredInSamples"
+  },
+  "author": "Diego Alvitres",
+  "license": "ISC",
+  "devDependencies": {
+    "@apidevtools/swagger-cli": "^4.0.4",
+    "@stoplight/spectral": "^6.5.0"
+  },
+  "dependencies": {
+    "redoc-cli": "^0.13.21"
+  }
+}

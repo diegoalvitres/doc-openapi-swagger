@@ -1,0 +1,42 @@
+get:
+  summary: Obtener lista de planetas
+  operationId: getAllPlanets
+  description: Obtener lista de planetas
+  tags:
+    - star wars
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getAllPlanetsResponse.yaml"
+post:
+  summary: Agregar nuevo planeta
+  operationId: addPlanet
+  description: Agregar nuevo planeta a la BD si es que el nombre no esta registrado
+  tags:
+    - star wars
+  requestBody:
+    $ref: "../schemas/addPlanetRequest.yaml"
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/addPlanetResponse.yaml"
+    '400':
+      description: Cuando el planeta que se quiere guardar ya esta en la BD
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - statusCode
+              - message
+            properties:
+              statusCode:
+                type: number
+              message:
+                type: string

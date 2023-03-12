@@ -1,0 +1,6 @@
+name: peopleId
+in: path
+required: true
+description: Identificador de la persona a obtener datos
+schema:
+  type: string

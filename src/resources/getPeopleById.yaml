@@ -1,0 +1,15 @@
+get:
+  summary: Obtener persona por id
+  operationId: getPeopleById
+  description: Obtener persona por id
+  tags:
+    - star wars
+  parameters:
+    - $ref: "../parameters/path/id.yaml"
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/getPeopleResponse.yaml"

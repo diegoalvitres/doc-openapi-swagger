@@ -1,0 +1,15 @@
+post:
+  summary: Agregar nuevo planeta
+  operationId: addPlanet
+  description: Agregar nuevo planeta a la BD si es que el nombre no esta registrado
+  tags:
+    - star wars
+  requestBody:
+    $ref: "../../schemas/addPlanetRequest.yaml"
+  responses:
+    '200':
+      description: Respuesta satisfactoria
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/addPlanetResponse.yaml"

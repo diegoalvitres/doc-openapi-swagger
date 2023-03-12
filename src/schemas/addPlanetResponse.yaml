@@ -1,0 +1,52 @@
+type: object
+required:
+  - id
+  - nombre
+  - peliculas
+  - editado
+  - creado
+  - clima
+  - periodo_rotacion
+  - url
+  - poblacion
+  - periodo_orbital
+  - agua_en_superficie
+  - diametro
+  - gravedad
+  - residentes
+  - terreno
+properties:
+  id:
+    type: string
+  nombre:
+    type: string
+  peliculas:
+    type: array
+    items:
+      type: string
+  editado:
+    type: string
+  creado:
+    type: string
+  clima:
+    type: string
+  periodo_rotacion:
+    type: string
+  url:
+    type: string
+  poblacion:
+    type: string
+  periodo_orbital:
+    type: string
+  agua_en_superficie:
+    type: string
+  diametro:
+    type: string
+  gravedad:
+    type: string
+  residentes:
+    type: array
+    items:
+      type: string
+  terreno:
+    type: string

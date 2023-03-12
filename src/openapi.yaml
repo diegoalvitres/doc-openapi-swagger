@@ -1,0 +1,28 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Swagger API Star Wars
+  description: Documentacion Star Wars API
+  license:
+    name: ISC
+  contact:
+    name: Diego Alvitres
+    email: diegoalvitres@gmail.com
+servers:
+  - url: https://dq8mdya51d.execute-api.us-east-1.amazonaws.com/dev/
+    description: enpoint activo
+tags:
+  - name: star wars
+    description: "Endpoint: https://dq8mdya51d.execute-api.us-east-1.amazonaws.com/dev/"
+
+paths:
+  /people:
+    $ref: "./resources/getAllPeople.yaml"
+  "/people/{id}":
+    $ref: "./resources/getPeopleById.yaml"
+  /planet:
+    $ref: "./resources/planetGeneral.yaml"
+  "/planet/{id}":
+    $ref: "./resources/getPlanetById.yaml"
+  /search/planet:
+    $ref: "./resources/getPlanetByName.yaml"

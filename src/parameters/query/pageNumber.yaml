@@ -1,0 +1,6 @@
+name: page
+in: query
+description: Numero de la pagina a obtener grupo de personas, si no se coloca carga la primera
+required: false
+schema:
+  type: string
